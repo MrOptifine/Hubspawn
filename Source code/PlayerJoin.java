@@ -29,7 +29,7 @@ private Main instance;
 		if(x == 0.0 && y == 0.0 && z == 0.0 && player.hasPermission("hubspawn.sethub")) {
 			player.sendMessage(ChatColor.RED + "YOU NEED TO SET THE SPAWNPOINT IN ORDER FOR THIS PLUGIN TO WORK!");
 			player.sendMessage(ChatColor.RED + "USE /sethub !!!!");
-		}else{
+		}elseif(x != 0.0 && y != 0.0 && z != 0.0){
 			Location location = new Location(world,x,y,z);
 			player.teleport(location);
 		}
